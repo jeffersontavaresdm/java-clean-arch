@@ -5,4 +5,4 @@ import org.springframework.context.annotation.PropertySource;
 
 @Configuration
 @PropertySource("classpath:config/environments.yml")
-public class ConfigProperties { }
+public class EnvironmentProperties { }

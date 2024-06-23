@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.com.alura</groupId>
-	<artifactId>codechella</artifactId>
+	<artifactId>java-clean-architecture</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>codechella</name>
 	<description>backend codechella</description>
@@ -48,6 +48,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-validation</artifactId>
 		</dependency>
+
 	</dependencies>
 
 	<build>

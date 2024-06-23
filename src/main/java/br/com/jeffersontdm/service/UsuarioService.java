@@ -1,6 +1,6 @@
-package br.com.alura.codechella.service;
+package br.com.jeffersontdm.service;
 
-import br.com.alura.codechella.model.Usuario;
+import br.com.jeffersontdm.model.Usuario;
 
 import java.util.List;
 

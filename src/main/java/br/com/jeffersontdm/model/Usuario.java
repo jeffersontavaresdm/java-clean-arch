@@ -1,4 +1,4 @@
-package br.com.alura.codechella.model;
+package br.com.jeffersontdm.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -8,9 +8,9 @@ import jakarta.persistence.Table;
 
 import java.time.LocalDate;
 
-@Entity
-@Table(name = "usuarios")
+@Entity(name = "usuarios")
 public class Usuario {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

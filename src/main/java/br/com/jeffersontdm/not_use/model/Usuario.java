@@ -1,4 +1,4 @@
-package br.com.jeffersontdm.model;
+package br.com.jeffersontdm.not_use.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

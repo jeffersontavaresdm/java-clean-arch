@@ -1,7 +1,7 @@
-package br.com.jeffersontdm.controller;
+package br.com.jeffersontdm.not_use.controller;
 
-import br.com.jeffersontdm.model.Usuario;
-import br.com.jeffersontdm.service.UsuarioService;
+import br.com.jeffersontdm.not_use.model.Usuario;
+import br.com.jeffersontdm.not_use.service.UsuarioService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.annotation.Transactional;
@@ -30,5 +30,4 @@ public class UsuarioController {
     public ResponseEntity<List<Usuario>> listar() {
         return ResponseEntity.ok(service.listarTodos());
     }
-
 }

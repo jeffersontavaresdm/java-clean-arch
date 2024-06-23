@@ -1,6 +1,6 @@
-package br.com.jeffersontdm.service;
+package br.com.jeffersontdm.not_use.service;
 
-import br.com.jeffersontdm.model.Usuario;
+import br.com.jeffersontdm.not_use.model.Usuario;
 
 import java.util.List;
 

@@ -1,7 +1,7 @@
-package br.com.jeffersontdm.service;
+package br.com.jeffersontdm.not_use.service;
 
-import br.com.jeffersontdm.model.Usuario;
-import br.com.jeffersontdm.repository.UsuarioRepository;
+import br.com.jeffersontdm.not_use.model.Usuario;
+import br.com.jeffersontdm.not_use.repository.UsuarioRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

@@ -1,9 +1,16 @@
-package br.com.jeffersontdm.domain.usuario;
+package br.com.jeffersontdm.domain.entity.usuario;
+
+import br.com.jeffersontdm.domain.entity.Endereco;
 
 import java.time.LocalDate;
 
-public record Usuario(String cpf, String nome, LocalDate nascimento, String email) {
-
+public record Usuario(
+    String cpf,
+    String nome,
+    LocalDate dataNascimento,
+    String email,
+    Endereco endereco
+) {
     public Usuario {
         if (!this.validaCPF(cpf)) {
             throw new IllegalArgumentException("CPF inválido!");
@@ -20,5 +27,9 @@ public record Usuario(String cpf, String nome, LocalDate nascimento, String emai
 
     private boolean validaEmail(String email) {
         return email != null && email.matches("[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}");
+    }
+
+    public static UsuarioBuilder builder() {
+        return new UsuarioBuilder();
     }
 }

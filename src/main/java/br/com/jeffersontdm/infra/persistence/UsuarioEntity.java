@@ -1,23 +1,28 @@
-package br.com.jeffersontdm.not_use.model;
+package br.com.jeffersontdm.infra.persistence;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 import java.time.LocalDate;
 
 @Entity(name = "usuarios")
-public class Usuario {
+public class UsuarioEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String cpf;
     private String nome;
-    private LocalDate nascimento;
+    private LocalDate dataNascimento;
     private String email;
+
+    public UsuarioEntity() { }
+
+    public UsuarioEntity(String cpf, String nome, LocalDate dataNascimento, String email) {
+        this.cpf = cpf;
+        this.nome = nome;
+        this.dataNascimento = dataNascimento;
+        this.email = email;
+    }
 
     public Long getId() {
         return id;
@@ -43,12 +48,12 @@ public class Usuario {
         this.nome = nome;
     }
 
-    public LocalDate getNascimento() {
-        return nascimento;
+    public LocalDate getDataNascimento() {
+        return dataNascimento;
     }
 
-    public void setNascimento(LocalDate nascimento) {
-        this.nascimento = nascimento;
+    public void setDataNascimento(LocalDate dataNascimento) {
+        this.dataNascimento = dataNascimento;
     }
 
     public String getEmail() {

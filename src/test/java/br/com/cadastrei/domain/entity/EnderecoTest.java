@@ -1,4 +1,4 @@
-package br.com.jeffersontdm.domain.entity;
+package br.com.cadastrei.domain.entity;
 
 import org.junit.jupiter.api.Test;
 

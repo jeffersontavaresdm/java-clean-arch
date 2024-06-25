@@ -1,6 +1,6 @@
-package br.com.jeffersontdm.application.gateways;
+package br.com.cadastrei.application.gateways;
 
-import br.com.jeffersontdm.domain.entity.usuario.Usuario;
+import br.com.cadastrei.domain.entity.usuario.Usuario;
 
 import java.util.List;
 

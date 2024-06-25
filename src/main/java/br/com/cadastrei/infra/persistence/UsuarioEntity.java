@@ -1,4 +1,4 @@
-package br.com.jeffersontdm.infra.persistence;
+package br.com.cadastrei.infra.persistence;
 
 import jakarta.persistence.*;
 

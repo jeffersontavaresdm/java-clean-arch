@@ -1,4 +1,4 @@
-package br.com.jeffersontdm.config;
+package br.com.cadastrei.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;

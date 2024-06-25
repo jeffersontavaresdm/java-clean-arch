@@ -1,6 +1,6 @@
-package br.com.jeffersontdm.domain.entity.usuario;
+package br.com.cadastrei.domain.entity.usuario;
 
-import br.com.jeffersontdm.domain.entity.Endereco;
+import br.com.cadastrei.domain.entity.Endereco;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;

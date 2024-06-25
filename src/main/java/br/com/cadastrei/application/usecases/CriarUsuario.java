@@ -1,7 +1,7 @@
-package br.com.jeffersontdm.application.usecases;
+package br.com.cadastrei.application.usecases;
 
-import br.com.jeffersontdm.application.gateways.UsuarioApplicationRepository;
-import br.com.jeffersontdm.domain.entity.usuario.Usuario;
+import br.com.cadastrei.application.gateways.UsuarioApplicationRepository;
+import br.com.cadastrei.domain.entity.usuario.Usuario;
 
 public class CriarUsuario {
     private final UsuarioApplicationRepository usuarioApplicationRepository;
@@ -10,7 +10,7 @@ public class CriarUsuario {
         this.usuarioApplicationRepository = usuarioApplicationRepository;
     }
 
-    public Usuario criarUsuario(Usuario usuario) {
+    public Usuario criar(Usuario usuario) {
         return this.usuarioApplicationRepository.salvar(usuario);
     }
 }

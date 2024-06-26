@@ -1,6 +1,6 @@
 package br.com.cadastrei.domain.entity.usuario;
 
-import br.com.cadastrei.domain.entity.Endereco;
+import br.com.cadastrei.domain.entity.endereco.Endereco;
 
 import java.time.LocalDate;
 
@@ -11,27 +11,27 @@ public class UsuarioBuilder {
     private String email;
     private Endereco endereco;
 
-    public UsuarioBuilder cpf(String cpf) {
+    public UsuarioBuilder setCPF(String cpf) {
         this.cpf = cpf;
         return this;
     }
 
-    public UsuarioBuilder nome(String nome) {
+    public UsuarioBuilder setNome(String nome) {
         this.nome = nome;
         return this;
     }
 
-    public UsuarioBuilder dataNascimento(LocalDate dataNascimento) {
+    public UsuarioBuilder setDataNascimento(LocalDate dataNascimento) {
         this.dataNascimento = dataNascimento;
         return this;
     }
 
-    public UsuarioBuilder email(String email) {
+    public UsuarioBuilder setEmail(String email) {
         this.email = email;
         return this;
     }
 
-    public UsuarioBuilder endereco(Endereco endereco) {
+    public UsuarioBuilder setEndereco(Endereco endereco) {
         this.endereco = endereco;
         return this;
     }

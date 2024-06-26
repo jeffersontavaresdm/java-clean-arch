@@ -1,6 +1,6 @@
 package br.com.cadastrei.domain.entity.usuario;
 
-import br.com.cadastrei.domain.entity.Endereco;
+import br.com.cadastrei.domain.entity.endereco.Endereco;
 
 import java.time.LocalDate;
 

@@ -1,8 +1,8 @@
-package br.com.cadastrei.infra.gateways;
+package br.com.cadastrei.infra.gateways.usuario;
 
-import br.com.cadastrei.domain.entity.Endereco;
+import br.com.cadastrei.domain.entity.endereco.Endereco;
 import br.com.cadastrei.domain.entity.usuario.Usuario;
-import br.com.cadastrei.infra.persistence.UsuarioEntity;
+import br.com.cadastrei.infra.persistence.usuario.UsuarioEntity;
 
 public class UsuarioEntityMapper {
 

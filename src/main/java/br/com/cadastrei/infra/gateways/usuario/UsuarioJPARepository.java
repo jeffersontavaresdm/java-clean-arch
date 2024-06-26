@@ -1,9 +1,9 @@
-package br.com.cadastrei.infra.gateways;
+package br.com.cadastrei.infra.gateways.usuario;
 
-import br.com.cadastrei.application.gateways.UsuarioApplicationRepository;
+import br.com.cadastrei.application.usuario.gateways.UsuarioApplicationRepository;
 import br.com.cadastrei.domain.entity.usuario.Usuario;
-import br.com.cadastrei.infra.persistence.UsuarioEntity;
-import br.com.cadastrei.infra.persistence.UsuarioRepository;
+import br.com.cadastrei.infra.persistence.usuario.UsuarioEntity;
+import br.com.cadastrei.infra.persistence.usuario.UsuarioRepository;
 
 import java.util.List;
 

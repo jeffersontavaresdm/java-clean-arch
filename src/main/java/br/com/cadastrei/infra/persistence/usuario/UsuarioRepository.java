@@ -1,4 +1,4 @@
-package br.com.cadastrei.infra.persistence;
+package br.com.cadastrei.infra.persistence.usuario;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

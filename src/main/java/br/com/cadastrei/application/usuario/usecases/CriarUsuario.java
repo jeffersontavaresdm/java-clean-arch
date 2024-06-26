@@ -1,6 +1,6 @@
-package br.com.cadastrei.application.usecases;
+package br.com.cadastrei.application.usuario.usecases;
 
-import br.com.cadastrei.application.gateways.UsuarioApplicationRepository;
+import br.com.cadastrei.application.usuario.gateways.UsuarioApplicationRepository;
 import br.com.cadastrei.domain.entity.usuario.Usuario;
 
 public class CriarUsuario {

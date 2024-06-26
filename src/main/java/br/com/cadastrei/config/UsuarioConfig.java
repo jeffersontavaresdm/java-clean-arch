@@ -1,11 +1,11 @@
 package br.com.cadastrei.config;
 
-import br.com.cadastrei.application.gateways.UsuarioApplicationRepository;
-import br.com.cadastrei.application.usecases.CriarUsuario;
-import br.com.cadastrei.application.usecases.ListarUsuarios;
-import br.com.cadastrei.infra.gateways.UsuarioEntityMapper;
-import br.com.cadastrei.infra.gateways.UsuarioJPARepository;
-import br.com.cadastrei.infra.persistence.UsuarioRepository;
+import br.com.cadastrei.application.usuario.gateways.UsuarioApplicationRepository;
+import br.com.cadastrei.application.usuario.usecases.CriarUsuario;
+import br.com.cadastrei.application.usuario.usecases.ListarUsuarios;
+import br.com.cadastrei.infra.gateways.usuario.UsuarioEntityMapper;
+import br.com.cadastrei.infra.gateways.usuario.UsuarioJPARepository;
+import br.com.cadastrei.infra.persistence.usuario.UsuarioRepository;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

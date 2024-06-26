@@ -1,6 +1,6 @@
 package br.com.cadastrei.domain.entity.usuario;
 
-import br.com.cadastrei.domain.entity.Endereco;
+import br.com.cadastrei.domain.entity.endereco.Endereco;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
@@ -14,7 +14,7 @@ class UsuarioEntityTest {
         String cpf = "123.456.789-00";
         String nome = "usuario_nome";
         LocalDate nascimento = LocalDate.of(1990, 1, 10);
-        String email = "usuario@email.com";
+        String email = "usuario@setEmail.com";
         Endereco endereco = new Endereco("12345-678", 123, "A");
 
         assertDoesNotThrow(() -> new Usuario(cpf, nome, nascimento, email, endereco));
@@ -25,7 +25,7 @@ class UsuarioEntityTest {
         String cpf = "12345678900";
         String nome = "usuario_nome";
         LocalDate nascimento = LocalDate.of(1990, 1, 10);
-        String email = "usuario@email.com";
+        String email = "usuario@setEmail.com";
         Endereco endereco = new Endereco("12345-678", 123, "A");
 
         assertThrows(IllegalArgumentException.class, () -> new Usuario(cpf, nome, nascimento, email, endereco));
@@ -36,7 +36,7 @@ class UsuarioEntityTest {
         String cpf = "123.456.789-00";
         String nome = "usuario_nome";
         LocalDate nascimento = LocalDate.of(1990, 1, 10);
-        String email = "usuario@email.com";
+        String email = "usuario@setEmail.com";
         Endereco endereco = new Endereco("12345-678", 123, "A");
 
         assertDoesNotThrow(() -> new Usuario(cpf, nome, nascimento, email, endereco));
@@ -47,9 +47,9 @@ class UsuarioEntityTest {
         String cpf = "123.456.789-00";
         String nome = "usuario_nome";
         LocalDate nascimento = LocalDate.of(1990, 1, 10);
-        String email1 = "usuario!email.com";
+        String email1 = "usuario!setEmail.com";
         String email2 = "usuario@abc_123.com";
-        String email3 = "usuario@email";
+        String email3 = "usuario@setEmail";
         Endereco endereco = new Endereco("12345-678", 123, "A");
 
         assertThrows(IllegalArgumentException.class, () -> new Usuario(cpf, nome, nascimento, email1, endereco));

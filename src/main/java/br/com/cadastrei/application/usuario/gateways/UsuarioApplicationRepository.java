@@ -1,4 +1,4 @@
-package br.com.cadastrei.application.gateways;
+package br.com.cadastrei.application.usuario.gateways;
 
 import br.com.cadastrei.domain.entity.usuario.Usuario;
 

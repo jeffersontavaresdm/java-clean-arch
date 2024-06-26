@@ -1,7 +1,7 @@
-package br.com.cadastrei.infra.controller;
+package br.com.cadastrei.infra.controller.usuario;
 
-import br.com.cadastrei.application.usecases.CriarUsuario;
-import br.com.cadastrei.application.usecases.ListarUsuarios;
+import br.com.cadastrei.application.usuario.usecases.CriarUsuario;
+import br.com.cadastrei.application.usuario.usecases.ListarUsuarios;
 import br.com.cadastrei.domain.entity.usuario.Usuario;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

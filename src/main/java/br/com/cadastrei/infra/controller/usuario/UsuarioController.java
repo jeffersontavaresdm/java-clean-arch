@@ -3,6 +3,7 @@ package br.com.cadastrei.infra.controller.usuario;
 import br.com.cadastrei.application.usuario.usecases.CriarUsuario;
 import br.com.cadastrei.application.usuario.usecases.ListarUsuarios;
 import br.com.cadastrei.domain.entity.usuario.Usuario;
+import br.com.cadastrei.domain.entity.usuario.dto.UsuarioDTO;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.annotation.Transactional;
@@ -24,14 +25,14 @@ public class UsuarioController {
 
     @PostMapping
     @Transactional
-    public ResponseEntity<?> cadastrar(@RequestBody Usuario payload) {
-        Usuario usuario = criarUsuario.criar(payload);
+    public ResponseEntity<UsuarioDTO> cadastrar(@RequestBody Usuario payload) {
+        UsuarioDTO usuario = criarUsuario.criar(payload);
         return ResponseEntity.status(HttpStatus.CREATED).body(usuario);
     }
 
     @GetMapping
-    public ResponseEntity<?> listar(){
-        List<Usuario> usuarios = listarUsuarios.listar();
+    public ResponseEntity<List<UsuarioDTO>> listar() {
+        List<UsuarioDTO> usuarios = listarUsuarios.listar();
         return ResponseEntity.status(HttpStatus.OK).body(usuarios);
     }
 }

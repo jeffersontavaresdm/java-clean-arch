@@ -1,6 +1,5 @@
-package br.com.cadastrei.domain.entity;
+package br.com.cadastrei.domain.entity.endereco;
 
-import br.com.cadastrei.domain.entity.endereco.Endereco;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;

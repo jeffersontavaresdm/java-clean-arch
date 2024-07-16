@@ -1,9 +1,0 @@
-services:
-  clean-arch-db:
-    image: postgres:14-alpine
-    environment:
-      POSTGRES_USER: dbtest
-      POSTGRES_PASSWORD: dbtest
-      POSTGRES_DB: dbtest
-    ports:
-      - "5432:5432"
